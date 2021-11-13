@@ -1,0 +1,49 @@
+﻿@model ExamenFInal.Models.ProductoModel
+    
+
+    <h1>Actualizacion de Productos</h1>
+    <hr />
+
+
+    <div class="row">
+        <div class="col-sm-12" >
+            <form asp-action="EditaProducto">
+                <input type="hidden" asp-for="IdProducto" />
+
+                <div class="form-group">
+                    <label asp-for="Proveedor" class="control-label"></label>
+                    <input asp-for="Proveedor" class="form-control" />
+                    <span asp-validation-for="Proveedor" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="cantidad" class="control-label"></label>
+                    <input asp-for="cantidad" class="form-control" />
+                    <span asp-validation-for="cantidad" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Producto" class="control-label"></label>
+                    <input asp-for="Producto" class="form-control" />
+                    <span asp-validation-for="Producto" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="TipoProducto" class="control-label"></label>
+                    <input asp-for="TipoProducto" class="form-control" />
+                    <span asp-validation-for="TipoProducto" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Descripcion" class="control-label"></label>
+                    <input asp-for="Descripcion" class="form-control" />
+                    <span asp-validation-for="Descripcion" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Precio" class="control-label"></label>
+                    <input asp-for="Precio" class="form-control" />
+                    <span asp-validation-for="Precio" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Actualizar Datos" class="btn btn-primary" />
+                </div>
+            </form>
+        </div>
+    </div>
+    <a asp-action="Index">Regresar</a>

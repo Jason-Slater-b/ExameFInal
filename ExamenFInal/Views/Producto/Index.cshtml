@@ -1,0 +1,71 @@
+﻿@model IEnumerable<ExamenFInal.Models.ProductoModel>
+@{ 
+    ViewData["Title"] = "Productos";
+}
+
+<h1>Módulo Principal -- Productos</h1>
+<p>
+    <a asp-action="Productoss">Agregar Nuevos Productos</a>
+</p>
+<p>
+    <a asp-action="Indexproveedor">Agregar Proveedor</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Producto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdProveedor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cantidad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TipoProducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Precio)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstadoProducto)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var registros in Model) { 
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => registros.Producto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => registros.IdProveedor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => registros.cantidad)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => registros.TipoProducto)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => registros.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => registros.Precio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => registros.EstadoProducto)
+            </td>
+            <td>
+                <a asp-action="EditaProducto" asp-route-id="@registros.IdProducto">Editar</a> |
+                <a asp-action="ConsultaProducto" asp-route-id="@registros.IdProducto">Consulta</a> |
+                <a asp-action="BorraProducto" asp-route-id="@registros.IdProducto">Borrar</a> |
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

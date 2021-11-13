@@ -1,0 +1,59 @@
+﻿@model IEnumerable<ExamenFInal.Models.ProveedoresModel>
+
+@{
+    ViewData["Title"] = "proveedor";
+}
+
+<h1>Proveedores</h1>
+<p>
+    <a asp-action="Proveedor">Crear nuevo Proveedor</a>
+</p>
+<table class=" table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Proveedor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Direccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.telefono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.correo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EstadoProveedor)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var registros in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => registros.Proveedor)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => registros.Direccion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => registros.telefono)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => registros.correo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => registros.EstadoProveedor)
+                </td>
+                <td>
+                    <a asp-action="EditaProveedor" asp-route-id="@registros.IdProveedor">Editar</a> |
+                    <a asp-action="ConsultaProveedor" asp-route-id="@registros.IdProveedor">Consultar</a> |
+                    <a asp-action="BorraProveedor" asp-route-id="@registros.IdProveedor">Borrar</a> |
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
