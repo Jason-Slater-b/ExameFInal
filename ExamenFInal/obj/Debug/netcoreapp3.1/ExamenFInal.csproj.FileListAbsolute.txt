@@ -91,3 +91,10 @@ D:\Desktop\8vo Semestre ING Sistemas\desarrollo web\examenFinal\ExamenFInal\obj\
 D:\Desktop\8vo Semestre ING Sistemas\desarrollo web\examenFinal\ExamenFInal\obj\Debug\netcoreapp3.1\Razor\Views\Producto\Indexproveedor.cshtml.g.cs
 D:\Desktop\8vo Semestre ING Sistemas\desarrollo web\examenFinal\ExamenFInal\bin\Debug\netcoreapp3.1\DocumentFormat.OpenXml.dll
 D:\Desktop\8vo Semestre ING Sistemas\desarrollo web\examenFinal\ExamenFInal\bin\Debug\netcoreapp3.1\System.IO.Packaging.dll
+D:\Desktop\8vo Semestre ING Sistemas\desarrollo web\examenFinal\ExamenFInal\obj\Debug\netcoreapp3.1\Razor\Views\Producto\ConsultaProveedor.cshtml.g.cs
+D:\Desktop\8vo Semestre ING Sistemas\desarrollo web\examenFinal\ExamenFInal\obj\Debug\netcoreapp3.1\Razor\Views\Producto\EditaProveedor.cshtml.g.cs
+D:\Desktop\8vo Semestre ING Sistemas\desarrollo web\examenFinal\ExamenFInal\obj\Debug\netcoreapp3.1\Razor\Views\Producto\IndexBodega.cshtml.g.cs
+D:\Desktop\8vo Semestre ING Sistemas\desarrollo web\examenFinal\ExamenFInal\obj\Debug\netcoreapp3.1\Razor\Views\Producto\Proveedorr.cshtml.g.cs
+D:\Desktop\8vo Semestre ING Sistemas\desarrollo web\examenFinal\ExamenFInal\obj\Debug\netcoreapp3.1\Razor\Views\Producto\bodegass.cshtml.g.cs
+D:\Desktop\8vo Semestre ING Sistemas\desarrollo web\examenFinal\ExamenFInal\obj\Debug\netcoreapp3.1\Razor\Views\Producto\ConsultaBodega.cshtml.g.cs
+D:\Desktop\8vo Semestre ING Sistemas\desarrollo web\examenFinal\ExamenFInal\obj\Debug\netcoreapp3.1\Razor\Views\Producto\EditaBodega.cshtml.g.cs

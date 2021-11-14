@@ -1,0 +1,68 @@
+﻿@model IEnumerable<ExamenFInal.Models.BodegaModel>
+@{
+    ViewData["Title"] = "Bodega";
+}
+
+<h1>Módulo de Boega</h1>
+<p>
+    <a asp-action="Index">Regresar</a>
+    <a asp-action="Bodega">Agregar Nuevas Bodegas</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.IdProducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cantidadProducto)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NombreBodega)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Direccion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.telefono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.correo)
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var registros in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => registros.Producto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => registros.IdProducto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => registros.cantidadProducto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => registros.NombreBodega)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => registros.Direccion)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => registros.telefono)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => registros.correo)
+                </td>
+                <td>
+                    <a asp-action="EditaProducto" asp-route-id="@registros.IdProducto">Editar</a> |
+                    <a asp-action="ConsultaProducto" asp-route-id="@registros.IdProducto">Consulta</a> |
+                    <a asp-action="BorraProducto" asp-route-id="@registros.IdProducto">Borrar</a> |
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
